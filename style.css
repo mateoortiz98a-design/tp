@@ -383,6 +383,8 @@ footer {
 main{
     flex: 1;
 }
+
+
 @media screen and (max-width: 1000px) {
     .header__nav {
         display: none;
@@ -409,7 +411,7 @@ main{
         height: 40px;
     }
     .title__section{
-        font-size: 30px;
+        font-size: 31px;
     }
     
 }
