@@ -148,7 +148,6 @@ a {
 
 
 .main__conteiner {
-    height: 1600px;
     background-color: #FCFBFF;
 }
 
@@ -156,6 +155,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
     background-color: #FCFBFF;
 }
 
@@ -178,6 +178,7 @@ p {
     font-size: 18px;
     font-weight: 500;
     color: #6A6A7D;
+    padding: 10px;
 
 }
 
@@ -195,29 +196,29 @@ p {
     display: flex;
     flex-direction: column;
     background-color: white;
-
     flex: 1 1 280px;
     max-width: 100%;
-
     padding: 24px;
     border-radius: 20px;
 }
 
 .title__section {
     font-size: 40px;
-    height: 42px;
+    height: auto;
+    padding: 20px;
+}
+
+.title__section.vuelo {
     margin: 32px 0px 32px 0px;
 }
 
 .banner__violet-section {
-    width: 100%;
     max-width: 1022px;
-    height: 134px;
+    width: 100%;
+    height: auto;
     background-color: #360C72;
     border-radius: 32px;
     display: flex;
-
-
 }
 
 .banner__violet h2 {
@@ -259,7 +260,8 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 670px;
+    max-width: 670px;
+    width: 100%;
     height: 70px;
 
 }
@@ -297,6 +299,7 @@ p {
 .metodo {
     display: flex;
     max-width: 1022px;
+    width: 100%;
     height: auto;
     background-color: white;
     border-radius: 32px;
@@ -328,6 +331,7 @@ p {
     display: flex;
     font-size: 16px;
     justify-content: center;
+    padding: 20px;
 }
 
 .conteiner__text_metodo {
@@ -337,20 +341,21 @@ p {
 }
 
 footer {
-    height: 400px;
+
     padding: 24px;
-    flex-wrap: wrap;
+
 }
 
 .footer-container {
     display: flex;
     flex-direction: column;
     max-width: 1022px;
+    width: 100%;
     height: auto;
-    margin: 0px 159px;
-    padding: 0px 0px 32px;
+    margin: auto;
+    padding: 32px;
     align-items: top;
-    gap: 10px;
+    gap: 24px;
 }
 
 .img__footer {
@@ -361,11 +366,13 @@ footer {
 .footer-columns {
     display: flex;
     justify-content: space-between;
+    gap: 32px;
 }
 
 .footer-col {
-    width: 237px;
-    height: 280px;
+    max-width: 237px;
+    width: 100%;
+    height: auto;
 }
 
 .footer-columns li {
@@ -380,7 +387,9 @@ footer {
     align-items: center;
     justify-content: center;
 }
-main{
+
+main {
+    height: auto;
     flex: 1;
 }
 
@@ -398,9 +407,9 @@ main{
     }
 
     .header__menu-hamburguesa {
-        position: absolute ;
+        position: absolute;
         left: 0;
-        
+
         width: 24px;
         height: 24px;
         margin-left: 20px;
@@ -410,31 +419,93 @@ main{
         width: 40px;
         height: 40px;
     }
-    .title__section{
-        font-size: 31px;
+
+    .title__section {
+        font-size: 30px;
     }
-    
+
 }
 
 
-@media  screen and (max-width:970px){
-    footer{
+@media screen and (max-width:970px) {
+    footer {
         width: 100%;
         height: auto;
     }
-    .footer-container{
+
+    .footer-container {
         max-width: 600px;
         height: auto;
     }
 }
-@media  screen and (max-width:769px) {
-    .metodo{
+
+@media screen and (max-width:769px) {
+    .metodo {
         display: flex;
         flex-direction: column;
     }
-    .metodo.section__qr{
+
+    .metodo.section__qr {
         display: flex;
         flex-direction: column;
     }
-    
+
+
+    main {
+        height: auto;
+    }
 }
+
+
+.footer__container_body {
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    .footer-columns {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .footer-col {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .section_main-metodo {
+        min-height: auto;
+        padding-bottom: 80px;
+    }
+    .banner__violet{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 220px;
+        
+        
+    }
+    .banner__violet p{
+        padding-top: 10px;
+    }
+    .banner__violet h2{
+        font-size: 24px;
+        padding left: 10px;
+    }
+    .pill.banner__violet-pill{
+        width: 100%;
+        height: 46px;
+    }
+    .section_main-metodo img {
+        position: static;
+    }
+ }
