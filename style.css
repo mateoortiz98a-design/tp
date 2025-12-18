@@ -403,6 +403,7 @@ main {
         display: flex;
         width: 100%;
         justify-content: center;
+        align-items: center;
         position: relative;
     }
 
@@ -464,12 +465,10 @@ main {
 @media (max-width: 768px) {
 
     .footer-columns {
-        display: flex;
-        flex-direction: column;
-
+        display: grid;
         align-items: center;
         gap: 24px;
-        text-align: center;
+        grid-template-columns: 1fr 1fr;
     }
 
     .footer-col {
@@ -478,6 +477,11 @@ main {
         height: auto;
     }
 
+    .footer-brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -485,27 +489,35 @@ main {
         min-height: auto;
         padding-bottom: 80px;
     }
-    .banner__violet{
+
+    .banner__violet {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         height: 220px;
-        
-        
+
+
     }
-    .banner__violet p{
+
+    .banner__violet p {
         padding-top: 10px;
     }
-    .banner__violet h2{
+
+    .banner__violet h2 {
         font-size: 24px;
         padding left: 10px;
     }
-    .pill.banner__violet-pill{
+
+    .pill.banner__violet-pill {
+        width: 100%;
+        height: 46px;
+    }
+    .pill.btn.pill{
         width: 100%;
         height: 46px;
     }
     .section_main-metodo img {
         position: static;
     }
- }
+}
