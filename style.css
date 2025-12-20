@@ -341,7 +341,7 @@ p {
 }
 
 footer {
-
+  background-color: white;
     padding: 24px;
 
 }
@@ -391,8 +391,12 @@ footer {
 main {
     height: auto;
     flex: 1;
+    gap: 50px;
+    margin-bottom: 50px;
 }
-
+body{
+    background-color: var(--color__primary-50);
+}
 
 @media screen and (max-width: 1000px) {
     .header__nav {
