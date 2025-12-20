@@ -162,6 +162,7 @@ section {
     align-items: center;
     height: auto;
     background-color: #FCFBFF;
+    
 }
 
 .section__conteiner-vuelo {
@@ -174,6 +175,7 @@ section {
     width: 62px;
     height: 62px;
     padding: 19px;
+    margin-left: 10px;
     background-color: #F0EAFC;
     color: #652BDF;
     border-radius: 15%;
