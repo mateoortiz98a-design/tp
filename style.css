@@ -35,6 +35,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+    background-color: white;
     height: 83px;
     border-bottom: 1px solid #e7eaed;
 }
@@ -341,7 +345,7 @@ p {
 }
 
 footer {
-  background-color: white;
+    background-color: white;
     padding: 24px;
 
 }
@@ -396,6 +400,10 @@ main {
 }
 body{
     background-color: var(--color__primary-50);
+}
+.footer-col li:hover{
+    text-decoration-line: underline;
+    color: var(--color__primary-700);
 }
 
 @media screen and (max-width: 1000px) {
