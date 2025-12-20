@@ -21,6 +21,7 @@
 
 h2 {
     color: var(--color__primary-gris);
+    padding: 0 10px;
 }
 
 h3 {
@@ -289,9 +290,6 @@ p {
     transition: 0.10s;
 }
 
-.metodo:hover .metodo-img img {
-    transform: scale(1.05);
-}
 
 .section__main-metodo {
     display: flex;
@@ -324,11 +322,24 @@ p {
     display: flex;
     flex-direction: row-reverse;
 }
-
+.metodo-img{
+    max-width: 1022px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 .metodo-img img {
     display: flex;
-    width: 100%;
+    width: 90%;
     height: auto;
+    object-fit: contain;
+}
+
+.metodo:hover img {
+    transform: scale(1.05);
+
 }
 
 .title__parr {
@@ -398,10 +409,12 @@ main {
     gap: 50px;
     margin-bottom: 50px;
 }
-body{
+
+body {
     background-color: var(--color__primary-50);
 }
-.footer-col li:hover{
+
+.footer-col li:hover {
     text-decoration-line: underline;
     color: var(--color__primary-700);
 }
@@ -460,8 +473,12 @@ body{
 
     .metodo.section__qr {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
     }
+    .metodo:hover img {
+    transform: none;
+
+}
 
 
     main {
@@ -525,10 +542,12 @@ body{
         width: 100%;
         height: 46px;
     }
-    .pill.btn.pill{
+
+    .pill.btn.pill {
         width: 100%;
         height: 46px;
     }
+
     .section_main-metodo img {
         position: static;
     }
